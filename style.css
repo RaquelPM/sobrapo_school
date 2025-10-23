@@ -1,0 +1,165 @@
+:root {
+  --cinza-escuro: #686868;
+  --cinza-claro: #9d9d9d;
+  --azul-claro: #00ADEF;
+  --azul-escuro: #008BC0;
+  --bg-claro: #f7f7f7;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: var(--cinza-escuro);
+  margin: 0;
+  background: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid var(--azul-claro);
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  gap: 40px;
+}
+
+h1 {
+  color: var(--azul-escuro);
+  font-size: 1.8rem;
+}
+
+h2 {
+  color: var(--azul-claro);
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--cinza-claro);
+  padding-bottom: 5px;
+}
+
+a {
+  color: var(--azul-claro);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Info grid */
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Tabela */
+.tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.tabela th {
+  background: var(--azul-claro);
+  color: white;
+  text-align: left;
+  padding: 8px;
+}
+
+.tabela td {
+  border: 1px solid var(--cinza-claro);
+  padding: 8px;
+}
+
+.aviso {
+  font-size: 0.85rem;
+  color: red;
+  margin-top: 10px;
+}
+
+/* Professores */
+.grid-prof {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.prof img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--azul-claro);
+}
+
+/* Comitê */
+.grid-comite {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.membro img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--azul-claro);
+  object-fit: cover;
+}
+
+/* Apoiadores */
+.apoio {
+  text-align: center;
+}
+
+.apoio .logos {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.apoio .logos img {
+  width: 100px;
+  margin: auto;
+}
+
+.rodape {
+  font-size: 0.9rem;
+  color: var(--cinza-escuro);
+  margin-top: 20px;
+}
+
+.apoio-tec {
+  font-size: 0.8rem;
+  color: var(--cinza-claro);
+  margin-bottom: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .tabela table, .tabela td, .tabela th {
+    font-size: 0.85rem;
+  }
+}
