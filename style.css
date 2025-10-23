@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   color: var(--cinza-escuro);
   margin: 0;
   background: white;
@@ -16,7 +16,7 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  border-bottom: 2px solid var(--azul-claro);
+  /* border-bottom: 2px solid var(--azul-claro); */
 }
 
 .logo {
@@ -25,7 +25,7 @@ header {
 
 .container {
   width: 90%;
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: auto;
   display: grid;
   gap: 40px;
@@ -39,8 +39,8 @@ h1 {
 h2 {
   color: var(--azul-claro);
   font-size: 1.2rem;
-  border-bottom: 1px solid var(--cinza-claro);
-  padding-bottom: 5px;
+  /* border-bottom: 1px solid var(--cinza-claro);
+  padding-bottom: 5px; */
 }
 
 a {
@@ -51,6 +51,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* .estrutura{
+
+} */
 
 /* Info grid */
 .info {
@@ -101,11 +105,19 @@ a:hover {
 }
 
 /* Comitê */
+
+/* .container_comite{
+  display: flex;
+  justify-content: center;
+} */
+
 .grid-comite {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .membro img {
@@ -121,16 +133,28 @@ a:hover {
   text-align: center;
 }
 
-.apoio .logos {
+.apoio {
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.apoio .logos img {
+.grid-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.grid-logos img {
   width: 100px;
   margin: auto;
+}
+
+.logo_log{
+  width: 300px !important;
 }
 
 .rodape {
