@@ -14,13 +14,13 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 20px;
+  text-align: left;
+  padding: 10px;
   /* border-bottom: 2px solid var(--azul-claro); */
 }
 
 .logo {
-  max-width: 200px;
+  width: 300px;
 }
 
 .container {
@@ -38,7 +38,7 @@ h1 {
 
 h2 {
   color: var(--azul-claro);
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   /* border-bottom: 1px solid var(--cinza-claro);
   padding-bottom: 5px; */
 }
@@ -52,8 +52,23 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+ font-size: 0.99rem
+}
+li {
+ font-size: 0.99rem
+}
+
+
 /* .estrutura{
 
+} */
+
+
+/* .description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 } */
 
 /* Info grid */
@@ -83,9 +98,14 @@ a:hover {
 }
 
 .aviso {
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   color: red;
   margin-top: 10px;
+  margin-bottom: 0;
+}
+.aviso_rodape {
+  font-size: 0.72rem;
+  margin-top: 0px;
 }
 
 /* Professores */
@@ -177,6 +197,9 @@ a:hover {
 
   h1 {
     font-size: 1.5rem;
+  }
+  header {
+    text-align: center;
   }
 
   .container {
