@@ -25,6 +25,21 @@ header {
 .logo {
   width: 330px;
 }
+.icone-apoio {
+  width: 10px;   
+  height: 10px;
+  vertical-align: middle;
+  margin-left: 3px;
+  margin-right: 2px;
+}
+.icone-email {
+  width: 17px;   
+  height: 17px;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 6px;
+}
+
 
 .container {
   width: 90%;
@@ -127,12 +142,27 @@ li {
   text-align: center;
 }
 
+.prof
+{
+  cursor: pointer;
+}
+.prof-link
+{
+  display: block;
+  text-decoration: none !important;
+  color: inherit;
+}
 .prof img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--azul-claro);
+}
+
+.prof:hover
+{
+  opacity: 0.75;
 }
 
 /* Comitê */
