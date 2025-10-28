@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso de Otimização Estocástica 2025</title>
+    <title>SOBRAPO School</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
@@ -41,7 +42,7 @@
         <section class="info">
             <div class="col">
                 <h2>Pré-requisitos</h2>
-                <ul>
+                <ul class="justify">
                     <li><b>Programação Linear</b>: modelagem, dualidade e soluções;</li>
                     <li><b>Probabilidade</b>: distribuição de probabilidade e valor esperado.</li>
                 </ul>
@@ -49,22 +50,22 @@
 
             <div class="col">
                 <h2>Leituras recomendadas</h2>
-                <ul>
-                    <li><b>Conteúdos básicos da linguagem Julia</b>: <a href="https://jump.dev/JuMP.jl/stable/tutorials/getting_started/getting_started_with_julia/ "> documentação Julia</a></li>
-                    <li><b>Modelagem e solvers com JuMP</b>: <a href="https://jump.dev/JuMP.jl/stable/tutorials/getting_started/getting_started_with_JuMP/"> documentação JuMP</a></li>
+                <ul  class="justify">
+                    <li><b>Conteúdos básicos da linguagem Julia</b>: <a href="https://jump.dev/JuMP.jl/stable/tutorials/getting_started/getting_started_with_julia/ "> documentação Julia.</a></li>
+                    <li><b>Modelagem e solvers com JuMP</b>: <a href="https://jump.dev/JuMP.jl/stable/tutorials/getting_started/getting_started_with_JuMP/"> documentação JuMP.</a></li>
                 </ul>
             </div>
         </section>
 
         <section class="leituras">
             <h2>Leituras complementares</h2>
-            <ul>
-                <li><b>Tutorial em português</b>: <a href="https://www.im-uff.mat.br/puc-rio/disciplinas/2006.1/soe/arquivos/iii-bienal-sbm-texto.pdf"> Uma Introdução à Otimização sob Incerteza. Humberto José Bortolossi e Bernardo Kulnig Pagnoncelli. III Bienal da Sociedade Brasileira de Matemática 2006. </a> </li>
-                <li><a href="https://link.springer.com/book/10.1007/978-1-4614-0237-4"> Introduction to Stochastic Programming, John R. Birge, François Louveaux, Springer Series in Operations Research and Financial Engineering. </a></li>
-                <li><a href="https://epubs.siam.org/doi/10.1137/1.9781611976595"> Lectures on Stochastic Programming: Modeling and Theory, Third Edition. Alexander Shapiro, Darinka Dentcheva, and Andrzej Ruszczynski, MOS-SIAM Series on Optimization. </a></li>
-                <li><b>Outros recursos</b>: <a href="https://www.stoprog.org/resources"> Stochastic Programming Society resources </a></li>
-
+            <ul class="justify">
+                <li><a href="https://www.im-uff.mat.br/puc-rio/disciplinas/2006.1/soe/arquivos/iii-bienal-sbm-texto.pdf"><b>Uma Introdução à Otimização sob Incerteza.</b> </a>Humberto José Bortolossi e Bernardo Kulnig Pagnoncelli. III Bienal da Sociedade Brasileira de Matemática 2006. </li>
+                <li><a href="https://link.springer.com/book/10.1007/978-1-4614-0237-4"><b> Introduction to Stochastic Programming.</b></a> John R. Birge, François Louveaux, Springer Series in Operations Research and Financial Engineering.</li>
+                <li><a href="https://epubs.siam.org/doi/10.1137/1.9781611976595"><b>Lectures on Stochastic Programming: Modeling and Theory, Third Edition.</b></a> Alexander Shapiro, Darinka Dentcheva, and Andrzej Ruszczynski, MOS-SIAM Series on Optimization.</li>
             </ul>
+            <p><b>Outros recursos</b>: <a href="https://www.stoprog.org/resources"> Stochastic Programming Society resources.</a></p>
+            </p>
         </section>
 
         <div class="line"></div>
@@ -72,7 +73,7 @@
         <section>
             <h2>Estrutura do curso</h2>
             <div class="estrutura">
-                <div class="estrutura-texto">
+                <div class="estrutura-texto justify">
                     <ol>
                         <li>
                             <b>Introdução:</b> Tomada de decisão sob incerteza: motivação e exemplos. Formulação matemática.
@@ -140,88 +141,81 @@
         <div class="line"></div>
 
         <section class="professores">
-            <h2>Professores palestrantes</h2>
+            <h2 class="title">Professores palestrantes</h2>
             <div class="grid-prof">
                 <a href="https://bsantos.ind.puc-rio.br/" class="prof-link">
                     <div class="prof">
-                        <img src="img/prof_bruno.png" alt="Bruno Fianzeres dos Santos" />
-                        <p><b>Bruno Fianzeres dos Santos</b><br>
-                            bruno.santos@coppe.ufrj.br<br>
-                            <!-- <a href="https://bsantos.ind.puc-rio.br/">https://bsantos.ind.puc-rio.br/</a><br> -->
-                            Departamento de Engenharia Industrial<br>
-                            PUC-Rio</p>
+                        <img class="photo" src="img/prof_bruno.png" alt="Bruno Fianzeres dos Santos" />
+                        <p class="prof_name">Bruno Fianzeres dos Santos</p>
+                        <p class="prof_email"> <img src="img/mail-prof.svg" class="icone-mail-prof"><b></b>bruno.santos@coppe.ufrj.br</p>
+                        <p class="prof_dp">Departamento de Engenharia Industrial</p>
+                        <p class="prof_uni">PUC-Rio</p>
                     </div>
                 </a>
                 <a href="https://bfpc.github.io/" class="prof-link">
                     <div class="prof">
-                        <img src="img/prof_bernado_costa.png" alt="Bernardo Freitas Paulo da Costa" />
-                        <p><b>Bernardo Freitas Paulo da Costa</b><br>
-                            bernardo.paulo@puc-rio.br<br>
-                            <!-- <a href="https://bfpc.github.io/">https://bfpc.github.io/</a><br> -->
-                            Escola de Matemática Aplicada<br>
-                            FGV</p>
+                        <img class="photo" src="img/prof_bernado_costa.png" alt="Bernardo Freitas Paulo da Costa" />
+                        <p class="prof_name">Bernardo F. Paulo da Costa</p>
+                        <p class="prof_email"> <img src="img/mail-prof.svg" class="icone-mail-prof"><b></b>bernardo.paulo@puc-rio.br</p>
+                        <p class="prof_dp">Escola de Matemática Aplicada</p>
+                        <p class="prof_uni">FGV</p>
                     </div>
                 </a>
                 <a href="https://www.skema.edu/br/node/5427" class="prof-link">
                     <div class="prof">
-                        <img src="img/prof_bernado_pag.png" alt="Bernardo Pagnoncelli" />
-                        <p><b>Bernardo Pagnoncelli</b><br>
-                            bernardo.pagnoncelli@lipscomb.edu<br>
-                            <!-- <a href="https://www.skema.edu/br/node/5427">https://www.skema.edu/br/node/5427</a><br> -->
-                            Centre for Analytics and Management Science<br>
-                            SKEMA Business School</p>
+                        <img src="img/prof_bernado_pag.png" alt="Bernardo Pagnoncelli" class="photo"/>
+                        <p class="prof_name">Bernardo Pagnoncelli</p>
+                        <p class="prof_email"> <img src="img/mail-prof.svg" class="icone-mail-prof"><b></b>bernardo.pagnoncelli@lipscomb.edu</p>
+                        <p class="prof_dp">Centre for Analytics and Management Science</p>
+                        <p class="prof_uni">SKEMA Business School</p>
                     </div>
                 </a>
                 <a href="https://mansci-web.uai.cl/thmello/" class="prof-link">
                     <div class="prof">
-                        <img src="img/prof_tito.png" alt="Tito Homem-de-Mello" />
-                        <p><b>Tito Homem-de-Mello</b><br>
-                            tito.hmello@uai.cl <br>
-                            <!-- <a href="https://mansci-web.uai.cl/thmello/">https://mansci-web.uai.cl/thmello/</a><br> -->
-                                School of Business<br>
-                                Universidad Adolfo Ibáñez, Santiago, Chile</p>
+                        <img src="img/prof_tito.png" alt="Tito Homem-de-Mello" class="photo"/>
+                        <p class="prof_name">Tito Homem-de-Mello</p>
+                        <p class="prof_email"> <img src="img/mail-prof.svg" class="icone-mail-prof"><b></b>tito.hmello@uai.cl</p>
+                        <p class="prof_dp">School of Business</p>
+                        <p class="prof_uni"> Universidad Adolfo Ibáñez, Santiago, Chile</p>
                     </div>
                 </a>
             </div>
         </section>
 
         <section class="comite">
-            <h2>Comitê de organização</h2>
+            <h2 class="title">Comitê de organização</h2>
             <div class="grid-comite">
+                <a class="membro" href="https://sites.google.com/view/anand-subramanian">
+                    <img class="photo_membro" src="img/anand.png" alt="Anand Subramanian" />
+                    <p><b>Anand Subramanian</b></p>
+                    <p class="membro_mail"> <img src="img/mail.svg" class="membro_icon"><b></b>anand@ci.ufpb.br</p>
+                </a>
                 <div class="membro">
-                    <img src="img/anand.png" alt="Anand Subramanian" />
-                    <p><b>Anand Subramanian</b><br>anand@ci.ufpb.br</p>
-                </div>
-                <div class="membro">
-                    <img src="img/joaquim.png" alt="Joaquim Dias Garcia" />
-                    <p><b>Joaquim Dias Garcia</b><br>bernardo.soa@ufrj.br</p>
+                    <img class="photo_membro" src="img/joaquim.png" alt="Joaquim Dias Garcia" />
+                    <p><b>Joaquim Dias Garcia</b></p>
+                    <p class="membro_mail"><img src="img/mail.svg" class="membro_icon"><b></b>bernardo.soa@ufrj.br</p>
                 </div>
             </div>
         </section>
 
         <section class="apoiadores">
-            <h2>Apoiadores</h2>
+            <h2 class="title">Apoiadores</h2>
             <div class="grid-logos">
                 <img src="img/puc.svg" alt="Logo 1" />
-                <img src="img/sobrapo.png" alt="Logo SOBRAPO" />
+                <a href="https://www.sobrapo.org.br/"><img src="img/sobrapo.png" alt="Logo SOBRAPO" /></a>
                 <img src="img/log.svg" alt="Logo LOG" class="logo_log"/>
             </div>
         </section>
 
         <section class="apoio">
-            <!-- <h2>Apoiadores</h2>
-            <div class="logos">
-                <img src="img/puc.svg" alt="Logo 1" />
-                <img src="img/sobrapo.png" alt="Logo SOBRAPO" />
-                <img src="img/log.svg" alt="Logo LOG" />
-            </div> -->
-            <p class="rodape">
-                Outubro de 2025<br>João Pessoa - PB, Brasil<br>
-                Dúvidas e contato:<img src="img/mail.svg" alt = "icone_apoio_tecnico" class = "icone-email"><b>joaquimdgarcia@gmail.com</b>
-            </p>
-            <p class="apoio-tec"><b>Apoio técnico</b><img src="img/ferramenta.svg" alt = "icone_apoio_tecnico" class = "icone-apoio">: <b> <a href="https://www.linkedin.com/in/raquel-patr%C3%ADcio-829484212/" style="font-style:normal; color:var(--cinza-claro);"> <u>Raquel Patrício</u> </a>  e <a href="https://www.linkedin.com/in/marcelo-de-freitas-cavalcante-7129a1231/" style="font-style:normal; color:var(--cinza-claro);"> <u>Marcelo de Freitas</u> </a> </b></p>
+            <div class="rodape">
+                <p class="data">Outubro de 2025</p>
+                <p class="local">João Pessoa - PB, Brasil</p>
+                <p class="duvida">Dúvidas e contato:<img src="img/mail.svg" alt = "icone_apoio_tecnico" class = "icone-email"><b>joaquimdgarcia@gmail.com</b></p>
+            </div>
         </section>
     </main>
+    <p class="apoio-tec"><b>Apoio técnico</b><img src="img/ferramenta.svg" alt = "icone_apoio_tecnico" class = "icone-apoio">: <b> <a href="https://www.linkedin.com/in/raquel-patr%C3%ADcio-829484212/" style="font-style:normal; color:var(--cinza-claro);"> <u>Raquel Patrício</u></a>  e <a href="https://www.linkedin.com/in/marcelo-de-freitas-cavalcante-7129a1231/" style="font-style:normal; color:var(--cinza-claro);"> <u>Marcelo de Freitas</u> </a> </b></p>
 </body>
 
 </html>

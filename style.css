@@ -1,5 +1,6 @@
 :root {
-  --cinza-escuro: #686868;
+  --cinza-medio: #686868;
+  --cinza-escuro: #242424;
   --cinza-claro: #9d9d9d;
   --azul-claro: #00ADEF;
   --azul-escuro: #008BC0;
@@ -25,6 +26,7 @@ header {
 .logo {
   width: 330px;
 }
+
 .icone-apoio {
   width: 10px;   
   height: 10px;
@@ -32,6 +34,7 @@ header {
   margin-left: 3px;
   margin-right: 2px;
 }
+
 .icone-email {
   width: 17px;   
   height: 17px;
@@ -40,12 +43,26 @@ header {
   margin-right: 6px;
 }
 
+.leituras li, .leituras p {
+  color:var(--cinza-medio)
+}
+
+.leituras p {
+  font-size: 0.9rem;
+  margin-left: 20px;
+}
+
+.leituras a{
+  color:var(--azul-escuro);
+  font-weight: bold;
+}
 
 .container {
   width: 90%;
   background-color: #f5f5f5;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 30px;
   /* max-width: 900px; */
   margin: auto;
   display: grid;
@@ -75,23 +92,11 @@ a:hover {
 }
 
 p {
- font-size: 0.99rem
+ font-size: 1rem
 }
 li {
- font-size: 0.99rem
+ font-size: 1rem
 }
-
-
-/* .estrutura{
-
-} */
-
-
-/* .description {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-} */
 
 /* Info grid */
 .info {
@@ -112,26 +117,31 @@ li {
 }
 
 .tabela th {
-  background: var(--azul-claro);
+  background: var(--azul-escuro);
   color: white;
   text-align: left;
   padding: 8px;
 }
 
 .tabela td {
-  border: 1px solid var(--cinza-claro);
+  border: 3px solid var(--azul-escuro);
   padding: 8px;
 }
 
+th{
+  border: 3px solid var(--azul-escuro);
+}
+
 .aviso {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: red;
   margin-top: 10px;
   margin-bottom: 0;
 }
 .aviso_rodape {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   margin-top: 0px;
+  color:var(--cinza-medio)
 }
 
 /* Professores */
@@ -152,25 +162,60 @@ li {
   text-decoration: none !important;
   color: inherit;
 }
-.prof img {
-  width: 120px;
-  height: 120px;
+.prof .photo {
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--azul-claro);
+  border: 4px solid var(--azul-claro);
 }
 
-.prof:hover
-{
-  opacity: 0.75;
+
+.prof p{
+  margin:0;
 }
 
-/* Comitê */
+.prof_name{
+  font-weight: bolder;
+  font-style: normal;
+  color: var(--azul-escuro);
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
 
-/* .container_comite{
-  display: flex;
-  justify-content: center;
-} */
+.prof_email{
+  font-weight: bold;
+  font-size: 0.8rem !important;
+  color: var(--azul-claro);
+  font-style: normal;
+}
+
+.prof_dp{
+  font-style: normal;
+  font-size: 0.7rem !important;
+  color: var(--cinza-medio);
+}
+
+.prof_uni{
+  font-weight: bold;
+  font-size: 0.7rem !important;
+  font-style: normal;
+  color: var(--cinza-medio);
+}
+
+.title{
+  color:var(--azul-escuro);
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+}
+
+.icone-mail-prof{
+  width: 18px;   
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
 
 .grid-comite {
   display: grid;
@@ -181,12 +226,35 @@ li {
   padding-right: 20%;
 }
 
-.membro img {
-  width: 100px;
-  height: 100px;
+.membro{
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.photo_membro {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 2px solid var(--azul-claro);
+  border: 4px solid var(--azul-claro);
   object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.membro p{
+  color:var(--cinza-medio);
+  margin:0;
+  font-style: normal;
+}
+
+.membro_icon{
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+.membro_mail{
+  font-size: 0.8rem !important;
 }
 
 /* Apoiadores */
@@ -210,7 +278,7 @@ li {
 }
 
 .grid-logos img {
-  width: 100px;
+  width: 110px;
   margin: auto;
 }
 
@@ -219,15 +287,30 @@ li {
 }
 
 .rodape {
-  font-size: 0.9rem;
-  color: var(--cinza-escuro);
   margin-top: 20px;
+}
+
+.rodape p{
+  margin: 0px;
+}
+
+.data, .local{
+  color:var(--cinza-claro);
+  font-size: 0.8rem !important;
+  font-weight: bold;
+}
+
+.duvida{
+  font-size: 0.85rem;
+  color: var(--cinza-medio);
+  margin-top: 10px !important;
 }
 
 .apoio-tec {
   font-size: 0.8rem;
   color: var(--cinza-claro);
-  margin-bottom: 30px;
+  text-align: center;
+  padding: 0px 10px;
 }
 
 .estrutura {
@@ -235,6 +318,10 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: start;
   gap: 50px;
+}
+
+.estrutura li{
+  margin-bottom: 10px;
 }
 
 .aviso, .aviso_rodape {
@@ -246,13 +333,22 @@ li {
 }
 
 .professores h2, .comite h2, .apoiadores h2 {
-  margin-bottom: 50px;
+  margin-bottom: 65px;
+  margin-top: 50px;
 }
 
 .line {
   width: 100%;
   height: 1px;
   background-color: #e5e5e5;
+}
+
+.intro p{
+  text-align: justify;
+}
+
+.justify {
+  text-align: justify;
 }
 
 /* Responsividade */
@@ -262,7 +358,16 @@ li {
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.85rem;
+  }
+  li {
+    font-size: 0.85rem;
   }
   header {
     text-align: center;
@@ -274,6 +379,8 @@ li {
 
   .container {
     background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
     width: auto;
   }
 
@@ -288,5 +395,43 @@ li {
   .estrutura{
     gap:10px;
   }
+
+  .justify{
+    padding-right: 5px;
+  }
+
+  .prof_dp, .prof_uni {
+    font-size: 0.65rem !important;
+  }
+
+  .prof_name{
+    font-size: 0.9rem;
+  }
+
+  .grid-logos{
+    padding: 0%;
+  }
   
+  .aviso, .aviso_rodape{
+    font-size: 0.65rem;
+    text-align: left;
+  }
 }
+
+/* ===== Chrome, Edge, Safari ===== */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--cinza-claro);
+  border-radius: 10px;      
+  border: 2px solid #f0f0f0;
+  margin: 2px;              
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--azul-escuro);
+}
+
