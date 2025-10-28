@@ -158,6 +158,7 @@ th{
 } */
 .prof-link
 {
+  cursor:pointer;
   display: block;
   text-decoration: none !important;
   color: inherit;
@@ -295,9 +296,11 @@ th{
 }
 
 .data, .local{
+  text-align: center;
   color:var(--cinza-claro);
   font-size: 0.8rem !important;
   font-weight: bold;
+  margin-top: 0px;
 }
 
 .duvida{
